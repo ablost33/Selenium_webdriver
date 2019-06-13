@@ -26,9 +26,19 @@ class LoginPage(SeleniumDriver):
     def clickLoginLink(self):
         self.elementClick(self._login_class,locatorType="classname")
 
-    def login(self, email, password):
+    def login(self, email="", password=""):
         self.typeEmail(email)
         self.typePassword(password)
         self.clickLoginLink()
+
+
+
+    def verifyLoginSuccessful(self):
+        if "Ubico" == self.driver.title:
+            return True
+        else:
+            return False
+
+
 
 
