@@ -16,20 +16,6 @@ def oneTimeSetUp(request, browser):
     wdf = WebDriverFactory(browser)
     driver = wdf.getWebDriverInstance()
 
-    # if browser == 'firefox':
-    #     baseURL = "https://insights.ubico.io/"
-    #     driver = webdriver.Firefox()
-    #     driver.maximize_window()
-    #     driver.implicitly_wait(3)
-    #     driver.get(baseURL)
-    #     time.sleep(3)
-    #     print("Running tests on FF")
-    # else:
-    #     baseURL = "https://insights.ubico.io/"
-    #     driver = webdriver.Chrome()
-    #     driver.get(baseURL)
-    #     print("Running tests on Chrome")
-
     if request.cls is not None:
         request.cls.driver = driver
 

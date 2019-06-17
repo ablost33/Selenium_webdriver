@@ -1,9 +1,9 @@
 from base.selenium_driver import SeleniumDriver
 import utilities.custom_logger as cl
 import logging
+from base.basepage import BasePage
 
-
-class LoginPage(SeleniumDriver):
+class LoginPage(BasePage):
 
     log = cl.customLogger(logging.DEBUG)
 
@@ -31,13 +31,8 @@ class LoginPage(SeleniumDriver):
         self.typePassword(password)
         self.clickLoginLink()
 
-
-
     def verifyLoginSuccessful(self):
-        if "Ubico" == self.driver.title:
-            return True
-        else:
-            return False
+      return self.verifyPageTitle("Ubico")
 
 
 
