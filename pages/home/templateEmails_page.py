@@ -41,14 +41,14 @@ class templateEmails(BasePage):
 
     def typeRandomEmail(self):
         subject = self.util.getAlphaNumeric(20)
-        email = self.util.getAlphaNumeric(200)
+        email = self.util.getAlphaNumeric(20)
         self.sendKeys(subject,self._subject_xpath,locatorType="xpath")
         self.sendKeys(email,self._email_xpath,locatorType="xpath")
         self.elementClick(self._saveButton_xpath,locatorType="xpath")
 
 
     def typeEmailNoSubject(self):
-        email = self.util.getAlphaNumeric(200)
+        email = self.util.getAlphaNumeric(20)
         self.sendKeys(email,self._email_xpath,locatorType="xpath")
         self.elementClick(self._saveButton_xpath,locatorType="xpath")
 
@@ -64,7 +64,6 @@ class templateEmails(BasePage):
 
     def finishCampaignCreation(self):
         self.elementClick(self._bigBottomNextButton_xpath,locatorType="xpath")
-        input("waiting on you:")
         self.elementClick(self._finishButton_xpath,locatorType="xpath")
 
 
