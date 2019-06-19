@@ -25,6 +25,8 @@ class templateEmails(BasePage):
     _subject_xpath ="//*[@id='io.ubico.emailSubject']"
     _email_xpath = "//*[@id='io.ubico.text']/div[2]/div[1]"
     _saveButton_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/div[2]/div/button[1]"
+    _bigBottomNextButton_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[4]/div[4]/button[1]/span[1]"
+    _finishButton_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[4]/div[4]/button[1]/span[1]"
 
     def clickAllTemplates(self):
         self.elementClick(self._recentNews_xpath, locatorType="xpath")
@@ -42,7 +44,6 @@ class templateEmails(BasePage):
         email = self.util.getAlphaNumeric(200)
         self.sendKeys(subject,self._subject_xpath,locatorType="xpath")
         self.sendKeys(email,self._email_xpath,locatorType="xpath")
-        self.removeIntercomChat()
         self.elementClick(self._saveButton_xpath,locatorType="xpath")
 
 
@@ -60,6 +61,11 @@ class templateEmails(BasePage):
         self.log.info("About to run template email test")
         text = self.getText(self._10xTraction_xpath, locatorType="xpath")
         return self.util.verifyTextContains(text,"10x {Company}'s traction in 10 minutes")
+
+    def finishCampaignCreation(self):
+        self.elementClick(self._bigBottomNextButton_xpath,locatorType="xpath")
+        input("waiting on you:")
+        self.elementClick(self._finishButton_xpath,locatorType="xpath")
 
 
 

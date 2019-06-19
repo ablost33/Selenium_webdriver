@@ -54,5 +54,6 @@ class TestStatus(SeleniumDriver):
             assert True == False
         else:
             self.log.info(testName + " ### TEST SUCCESSFUL")
+            self.log.info("                               ")
             self.resultList.clear()
             assert True == True

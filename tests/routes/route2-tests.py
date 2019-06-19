@@ -20,6 +20,8 @@ class LoginTests(unittest.TestCase):
     @pytest.mark.run(order=1)
     def test_createnew(self):
         self.op.fillListName()
+        self.op.fillCountryCriteria()
+        self.op.makeCustomCriteria()
         self.op.addCampaignStep()
         self.te.clickAllTemplates()
         self.te.typeRandomEmail()
@@ -30,9 +32,5 @@ class LoginTests(unittest.TestCase):
         self.ts.webScroll(direction="down")
         self.op.createNewStep()
         self.te.typeTemplateEmail()
-        result = self.te.checkTemplateEmail()
-        self.ts.markFinal("test_validTemplateEmail", result, "Correct template email valid")
-        self.ts.webScroll(direction="down")
-        self.op.createNewStep()
-
+        self.te.finishCampaignCreation()
 

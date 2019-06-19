@@ -22,16 +22,26 @@ class BasePage(SeleniumDriver):
             return False
 
     _intercomChat_xpath = "//*[@id='intercom-container']/div/iframe"
-    _exitButton_class = "//*[@id='intercom-container']/div/div"
+    _exitButton_class = "//*[@id='intercom-container']/div/div/div[2]"
+    _next1_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[1]/div/div[2]/button"
 
     def removeIntercomChat(self):
 
-        element = self.getElement(self._intercomChat_xpath,locatorType="xpath")
+        openIntercomButton = self.getElement(self._intercomChat_xpath,locatorType="xpath")
         actions = ActionChains(self.driver)
-        actions.move_to_element(element).perform()
+        actions.move_to_element(openIntercomButton).perform()
         self.elementClick(self._intercomChat_xpath,locatorType="xpath")
         time.sleep(1)
-        self.elementClick(self._exitButton_class,locatorType="xpath")
+
+        closeIntercomButton = self.getElement(self._intercomChat_xpath,locatorType="xpath")
+        actions = ActionChains(self.driver)
+        actions.move_to_element(closeIntercomButton).perform()
+        self.elementClick(self._intercomChat_xpath,locatorType="xpath")
+
+        next1button = self.getElement(self._next1_xpath, locatorType="xpath")
+        actions = ActionChains(self.driver)
+        actions.move_to_element(next1button).perform()
+        self.elementClick(self._next1_xpath,locatorType="xpath")
 
 
 

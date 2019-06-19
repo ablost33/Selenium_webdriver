@@ -18,4 +18,12 @@ class LoginTests(unittest.TestCase):
         time.sleep(2)
         self.op.clickMonthlyButton()
         time.sleep(1)
-        self.op.verifyMonthlyButton()
+        monthlyButton_result = self.op.verifyMonthlyButton()
+        self.ts.markFinal("Verify if monthly button works. ",monthlyButton_result, " Monthly button DOES work! ")
+        self.op.clickWeeklyButton()
+        time.sleep(1)
+        weeklyButton_result = self.op.verifyWeeklyButton()
+        self.ts.markFinal("Verify if weekly button works. ", weeklyButton_result, " Weekly button DOES work! ")
+
+
+

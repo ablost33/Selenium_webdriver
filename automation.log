@@ -1,0 +1,14 @@
+06/19/2019 12:28:43 PM - LoginPage - INFO: Element Found
+06/19/2019 12:28:44 PM - LoginPage - INFO: Sent data on element with locator: //input[@name='email'] locatorType: xpath
+06/19/2019 12:28:44 PM - LoginPage - INFO: Element Found
+06/19/2019 12:28:44 PM - LoginPage - INFO: Sent data on element with locator: //input[@name='password'] locatorType: xpath
+06/19/2019 12:28:44 PM - LoginPage - INFO: Element Found
+06/19/2019 12:28:44 PM - LoginPage - INFO: Clicked on element with locator: auth0-lock-submit locatorType: classname
+06/19/2019 12:28:47 PM - currentTasksPage - INFO: Element not found
+06/19/2019 12:28:47 PM - currentTasksPage - INFO: Cannot click on the element with locator: //*[@id='root']/div/div/main/div/a/span locatorType: xpath
+06/19/2019 12:28:47 PM - currentTasksPage - INFO: Element not found
+06/19/2019 12:28:47 PM - currentTasksPage - INFO: Cannot click on the element with locator: //*[@id='root']/div/div/main/div/div/div[2]/div/div/div/button/span[1] locatorType: xpath
+06/19/2019 12:28:47 PM - currentTasksPage - INFO: Element not found
+06/19/2019 12:28:47 PM - currentTasksPage - INFO: Cannot send data on the element with locator: io.ubico.ICP_NAME locatorType: id
+06/19/2019 12:28:47 PM - currentTasksPage - INFO: Element not found
+06/19/2019 12:28:47 PM - currentTasksPage - INFO: Cannot send data on the element with locator: io.ubico.IDEAL_LEADS locatorType: id

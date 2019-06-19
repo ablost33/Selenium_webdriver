@@ -17,7 +17,7 @@ def oneTimeSetUp(request, browser):
     wdf = WebDriverFactory(browser)
     driver = wdf.getWebDriverInstance()
     lp = LoginPage(driver)
-    lp.login("test@ubico.io", "Ubico2018")
+    lp.login("alex@blowstein.io", "slfghlak76jhsldhf#dh")
 
     if request.cls is not None:
         request.cls.driver = driver
