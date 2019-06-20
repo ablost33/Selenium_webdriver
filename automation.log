@@ -1,24 +1,90 @@
-06/20/2019 02:02:20 PM - LoginPage - INFO: Element Found
-06/20/2019 02:02:21 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
-06/20/2019 02:02:21 PM - LoginPage - INFO: Element Found
-06/20/2019 02:02:21 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
-06/20/2019 02:02:21 PM - LoginPage - INFO: Element Found
-06/20/2019 02:02:21 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
-06/20/2019 02:02:23 PM - ProspectsPage - INFO: Element Found
-06/20/2019 02:02:23 PM - ProspectsPage - INFO: Clicked on element with locator: //*[@id='root']/div/div/div/div/ul/li[2]/a/span locatorType: xpath
-06/20/2019 02:02:24 PM - ProspectsPage - INFO: Element Found
-06/20/2019 02:02:24 PM - ProspectsPage - INFO: Clicked on element with locator: //*[@id='io.ubico.CONTACTS'] locatorType: xpath
-06/20/2019 02:02:28 PM - ProspectsPage - INFO: Element not found
-06/20/2019 02:02:28 PM - ProspectsPage - INFO: Cannot click on the element with locator: //*[@id='io.ubico.INTEGRATIONS'] locatorType: xpath
-06/20/2019 02:05:17 PM - LoginPage - INFO: Element Found
-06/20/2019 02:05:17 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
-06/20/2019 02:05:17 PM - LoginPage - INFO: Element Found
-06/20/2019 02:05:18 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
-06/20/2019 02:05:18 PM - LoginPage - INFO: Element Found
-06/20/2019 02:05:18 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
-06/20/2019 02:05:19 PM - ProspectsPage - INFO: Element Found
-06/20/2019 02:05:19 PM - ProspectsPage - INFO: Clicked on element with locator: //*[@id='root']/div/div/div/div/ul/li[2]/a/span locatorType: xpath
-06/20/2019 02:05:19 PM - ProspectsPage - INFO: Element Found
-06/20/2019 02:05:20 PM - ProspectsPage - INFO: Clicked on element with locator: //*[@id='io.ubico.CONTACTS'] locatorType: xpath
-06/20/2019 02:05:20 PM - ProspectsPage - INFO: Element Found
-06/20/2019 02:05:20 PM - ProspectsPage - INFO: Clicked on element with locator: //*[@id='io.ubico.IMPORT_DYNAMICS'] locatorType: xpath
+06/20/2019 03:12:53 PM - LoginPage - INFO: Element Found
+06/20/2019 03:12:54 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 03:12:54 PM - LoginPage - INFO: Element Found
+06/20/2019 03:12:54 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 03:12:54 PM - LoginPage - INFO: Element Found
+06/20/2019 03:12:54 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 03:12:56 PM - syncEmail - INFO: Element Found
+06/20/2019 03:12:56 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/div/div/ul/li[5]/a locatorType: xpath
+06/20/2019 03:12:58 PM - syncEmail - INFO: Element Found
+06/20/2019 03:12:58 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/main/div/div/button locatorType: xpath
+06/20/2019 03:13:04 PM - syncEmail - INFO: Element not found
+06/20/2019 03:13:04 PM - syncEmail - INFO: Cannot click on the element with locator: //*[@id='login_hint'] locatorType: xpath
+06/20/2019 03:13:07 PM - syncEmail - INFO: Element not found
+06/20/2019 03:13:08 PM - syncEmail - INFO: Cannot send data on the element with locator: //*[@id='login_hint'] locatorType: xpath
+06/20/2019 03:14:34 PM - LoginPage - INFO: Element Found
+06/20/2019 03:14:35 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 03:14:35 PM - LoginPage - INFO: Element Found
+06/20/2019 03:14:35 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 03:14:35 PM - LoginPage - INFO: Element Found
+06/20/2019 03:14:36 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 03:14:37 PM - syncEmail - INFO: Element Found
+06/20/2019 03:14:37 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/div/div/ul/li[5]/a locatorType: xpath
+06/20/2019 03:14:39 PM - syncEmail - INFO: Element Found
+06/20/2019 03:14:39 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/main/div/div/button locatorType: xpath
+06/20/2019 03:14:45 PM - syncEmail - INFO: Element not found
+06/20/2019 03:14:45 PM - syncEmail - INFO: Cannot click on the element with locator: //*[@id='login_hint'] locatorType: xpath
+06/20/2019 03:14:48 PM - syncEmail - INFO: Element not found
+06/20/2019 03:14:48 PM - syncEmail - INFO: Cannot send data on the element with locator: //*[@id='login_hint'] locatorType: xpath
+06/20/2019 03:14:49 PM - syncEmail - INFO: Element not found
+06/20/2019 03:14:49 PM - syncEmail - INFO: Cannot click on the element with locator: //*[@id='footer''] locatorType: xpath
+06/20/2019 03:25:28 PM - LoginPage - INFO: Element Found
+06/20/2019 03:25:28 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 03:25:28 PM - LoginPage - INFO: Element Found
+06/20/2019 03:25:28 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 03:25:28 PM - LoginPage - INFO: Element Found
+06/20/2019 03:25:28 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 03:25:30 PM - syncEmail - INFO: Element Found
+06/20/2019 03:25:30 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/div/div/ul/li[5]/a locatorType: xpath
+06/20/2019 03:25:32 PM - syncEmail - INFO: Element Found
+06/20/2019 03:25:32 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/main/div/div/button locatorType: xpath
+06/20/2019 03:25:38 PM - syncEmail - INFO: Element not found
+06/20/2019 03:25:38 PM - syncEmail - INFO: Cannot send data on the element with locator: //*[@id='login_hint'] locatorType: xpath
+06/20/2019 03:31:37 PM - LoginPage - INFO: Element Found
+06/20/2019 03:31:38 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 03:31:38 PM - LoginPage - INFO: Element Found
+06/20/2019 03:31:38 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 03:31:38 PM - LoginPage - INFO: Element Found
+06/20/2019 03:31:38 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 03:31:39 PM - syncEmail - INFO: Element Found
+06/20/2019 03:31:40 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/div/div/ul/li[5]/a locatorType: xpath
+06/20/2019 03:31:42 PM - syncEmail - INFO: Element Found
+06/20/2019 03:31:42 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/main/div/div/button locatorType: xpath
+06/20/2019 03:31:49 PM - syncEmail - INFO: Element not found
+06/20/2019 03:31:49 PM - syncEmail - INFO: Cannot send data on the element with locator: //*[@id='login_hint'] locatorType: xpath
+06/20/2019 03:33:40 PM - LoginPage - INFO: Element Found
+06/20/2019 03:33:41 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 03:33:41 PM - LoginPage - INFO: Element Found
+06/20/2019 03:33:41 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 03:33:41 PM - LoginPage - INFO: Element Found
+06/20/2019 03:33:42 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 03:33:43 PM - syncEmail - INFO: Element Found
+06/20/2019 03:33:44 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/div/div/ul/li[5]/a locatorType: xpath
+06/20/2019 03:33:49 PM - syncEmail - INFO: Element not found
+06/20/2019 03:33:49 PM - syncEmail - INFO: Cannot click on the element with locator: //*[@id='root']/div/div/main/div/div/button locatorType: xpath
+06/20/2019 03:33:55 PM - syncEmail - INFO: Element not found
+06/20/2019 03:33:55 PM - syncEmail - INFO: Cannot send data on the element with locator: //*[@id='login_hint'] locatorType: xpath
+06/20/2019 03:49:05 PM - LoginPage - INFO: Element Found
+06/20/2019 03:49:06 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 03:49:06 PM - LoginPage - INFO: Element Found
+06/20/2019 03:49:06 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 03:49:06 PM - LoginPage - INFO: Element Found
+06/20/2019 03:49:06 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 03:49:07 PM - syncEmail - INFO: Element Found
+06/20/2019 03:49:08 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/div/div/ul/li[5]/a locatorType: xpath
+06/20/2019 03:49:10 PM - syncEmail - INFO: Element Found
+06/20/2019 03:49:10 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/main/div/div/button locatorType: xpath
+06/20/2019 03:49:16 PM - syncEmail - INFO: Element not found
+06/20/2019 03:49:16 PM - syncEmail - INFO: Cannot send data on the element with locator: //*[@id='login_hint'] locatorType: xpath
+06/20/2019 03:54:35 PM - LoginPage - INFO: Element Found
+06/20/2019 03:54:36 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 03:54:36 PM - LoginPage - INFO: Element Found
+06/20/2019 03:54:37 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 03:54:37 PM - LoginPage - INFO: Element Found
+06/20/2019 03:54:37 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 03:56:14 PM - LoginPage - INFO: Element Found
+06/20/2019 03:56:14 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 03:56:14 PM - LoginPage - INFO: Element Found
+06/20/2019 03:56:15 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 03:56:15 PM - LoginPage - INFO: Element Found
+06/20/2019 03:56:15 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
