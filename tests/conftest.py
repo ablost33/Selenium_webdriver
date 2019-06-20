@@ -17,7 +17,22 @@ def oneTimeSetUp(request, browser):
     wdf = WebDriverFactory(browser)
     driver = wdf.getWebDriverInstance()
     lp = LoginPage(driver)
-    lp.login("alex@blowstein.io", "slfghlak76jhsldhf#dh")
+    lp.login("zhi.guo@ubico.io", "abc12345")
+
+    if request.cls is not None:
+        request.cls.driver = driver
+
+    yield driver
+    # driver.quit()
+    print("Running one time tearDown")
+
+@pytest.yield_fixture(scope="class")
+def developerOneTimeSetUp(request,browser):
+    print("Running one time setUp on develop branch")
+    wdf = WebDriverFactory(browser)
+    driver = wdf.getDevelopWebDriverInstance()
+    lp = LoginPage(driver)
+    lp.login("zhi.guo@ubico.io", "abc12345")
 
     if request.cls is not None:
         request.cls.driver = driver

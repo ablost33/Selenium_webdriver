@@ -25,10 +25,8 @@ class currentICP(BasePage):
         self.te = templateEmails(self.driver)
 
 
-
-
     _createIcon_xpath = "//*[@id='root']/div/div/main/div/a/span"
-    _createNewCampaign_xpath = "//*[@id='root']/div/div/main/div/div/div[1]/div/div[2]"
+    _createNewCampaign_xpath = "//*[@id='tour_create_new_campaign']"
     _ICPname_ID = "io.ubico.ICP_NAME"
     _ICPdescription_ID = "io.ubico.IDEAL_LEADS"
     _createNewButton_xpath = "//*[@id='root']/div/div/main/div/div/div[1]/div/div[2]"
@@ -40,7 +38,7 @@ class currentICP(BasePage):
     _littleNextButton_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[1]/div/div[3]/button[2]"
     _addCampaignStep_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[1]/div/button/span[1]"
     _createNewStep_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[1]/div[2]/div"
-    _startCustomCriteria_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[1]/div/div[1]/button"
+    _startCustomCriteria_xpath = "//*[@id='tour_add_custom_criteria']/button"
     _annualRevenue_xpath = "//*[@id='io.ubico.COMPANY_REVENUE']/div/div[1]"
     _customCriteria_xpath = "//*[@id='io.ubico.CRITERIA_DESCRIPTION']"
     _addCustomCriteria_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[1]/div/div[2]/div[9]/div/div[2]"
@@ -51,12 +49,14 @@ class currentICP(BasePage):
     _addAnotherJobTitle_xpath = "//*[@id='root']/div/div/main/div/div/div/div/div[1]/div[8]/div[1]"
 
     def fillListName(self):
+        self.log.info("----------STARTING fillLLISTNAME-----------------")
         self.elementClick(self._createIcon_xpath,locatorType="xpath")
-        self.elementClick(self._createNewButton_xpath, locatorType="xpath")
+        self.elementClick(self._createNewCampaign_xpath, locatorType="xpath")
         name = self.util.getUniqueName()
         self.sendKeys(name,self._ICPname_ID)
         text = self.util.getAlphaNumeric(250)
         self.sendKeys(text,self._ICPdescription_ID)
+        self.log.info("----------Ending fillLLISTNAME-----------------")
 
 
     def addCampaignStep(self):

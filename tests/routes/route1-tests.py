@@ -5,11 +5,11 @@ import unittest
 import pytest
 
 
-@pytest.mark.usefixtures("oneTimeSetUp","setUp")
+@pytest.mark.usefixtures("developerOneTimeSetUp","setUp")
 class LoginTests(unittest.TestCase):
 
     @pytest.fixture(autouse=True)
-    def classSetup(self,oneTimeSetUp):
+    def classSetup(self,developerOneTimeSetUp):
         self.op = OverviewPage(self.driver)
         self.ts = TestStatus(self.driver)
 

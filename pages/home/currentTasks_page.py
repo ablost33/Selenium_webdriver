@@ -20,11 +20,11 @@ class currentTasksPage(BasePage):
     _bigTargetIcon_xpath ="//*[@id='StepOneTargeting']"
     _editStep_xpath = "//*[@id='root']/div/div/main/div/div/div/div[3]/button"
     _updateTargeting_xpath = "//*[@id='root']/div/div/main/div/div/div/div/div[2]/button[2]"
-    _smallTargetIcon_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[2]/div[1]/div[2]/span[2]"
+    _smallTargetIcon_xpath = "//*[@id='tour_targeting']"
     _targetExitIcon_xpath = "//*[@id='root']/div/div/main/div/div/div[1]/div[2]/span/img"
     _onOffSwitch_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[2]/div[1]/label/span[1]/span[1]"
-    _messageIcon_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[2]/div[1]/div[2]/span[3]"
-    _statisticsIcon_xpath = "//*[@id='root']/div/div/main/div/div/div[2]/div/div/div[2]/div[1]/div[2]/span[1]"
+    _messageIcon_xpath = "//*[@id='tour_messaging']"
+    _statisticsIcon_xpath = "//*[@id='tour_statistics']"
 
 
     def deleteICP(self):
@@ -46,6 +46,7 @@ class currentTasksPage(BasePage):
     def targeting(self):
         time.sleep(5)
         self.elementClick(self._smallTargetIcon_xpath, locatorType="xpath")
+        time.sleep(1)
         self.elementClick(self._targetExitIcon_xpath, locatorType="xpath")
 
     def on_off(self):
@@ -55,6 +56,7 @@ class currentTasksPage(BasePage):
     def messaging(self):
         time.sleep(5)
         self.elementClick(self._messageIcon_xpath, locatorType="xpath")
+        time.sleep(1)
         self.elementClick(self._targetExitIcon_xpath, locatorType="xpath")
 
     def statistics(self):

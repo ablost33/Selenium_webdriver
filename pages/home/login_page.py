@@ -12,9 +12,9 @@ class LoginPage(BasePage):
         super().__init__(driver)
         self.driver = driver
 
-    _login_class = "auth0-lock-submit"
-    _email_xpath = "//input[@name='email']"
-    _password_xpath = "//input[@name='password']"
+    _login_xpath = "//*[@id='root']/div/div[1]"
+    _email_xpath = "//*[@id='root']/div/input[1]"
+    _password_xpath = "//*[@id='root']/div/input[2]"
 
 
     def typeEmail(self,email):
@@ -24,7 +24,7 @@ class LoginPage(BasePage):
         self.sendKeys(password,self._password_xpath,locatorType="xpath")
 
     def clickLoginLink(self):
-        self.elementClick(self._login_class,locatorType="classname")
+        self.elementClick(self._login_xpath,locatorType="xpath")
 
     def login(self, email="", password=""):
         self.typeEmail(email)

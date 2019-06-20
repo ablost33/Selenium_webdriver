@@ -15,6 +15,10 @@ class OverviewPage(BasePage):
     _weeklybutton_xpath = "//*[@id='tour_campaign_performance']/div/ul/li[1]"
     _monthlybutton_xpath= "//*[@id='tour_campaign_performance']/div/ul/li[2]/div"
     _contactedbutton_xpath = "//*[@id='tour_campaign_performance']/ul/div[2]/div[1]"
+    _assistantName_xpath = "//*[@id='assistantName']/div/div[1]"
+    _assistantTitle_xpath = "//*[@id='assistantTitle']/div/div[1]"
+    _frequencyreports_xpath = "//*[@id='root']/div/div/main/div/div[1]/div[2]/input"
+    _createButton_xpath = "//*[@id='root']/div/div/main/div/div[1]/div[2]/div[3]"
 
 
     def clickMonthlyButton(self):
@@ -40,6 +44,21 @@ class OverviewPage(BasePage):
             return True
         else:
             return False
+
+    def buildAssistant(self):
+
+        self.elementClick(self._assistantName_xpath,locatorType="xpath")
+        self.elementClick("div.css-15k3avv",locatorType="css")
+
+        self.elementClick(self._assistantTitle_xpath, locatorType="xpath")
+        self.elementClick("div.css-15k3avv",locatorType="css")
+
+        self.elementClick(self._frequencyreports_xpath, locatorType="xpath")
+        self.sendKeys("5", self._frequencyreports_xpath, locatorType="xpath")
+        self.elementClick(self._createButton_xpath, locatorType="xpath")
+
+
+
 
 
 
