@@ -3,6 +3,8 @@ import utilities.custom_logger as cl
 import time
 import logging
 from base.basepage import BasePage
+from selenium.webdriver.common import action_chains
+
 
 
 class syncEmail(BasePage):
@@ -24,6 +26,11 @@ class syncEmail(BasePage):
         time.sleep(2)
         self.elementClick(self._syncEmailButton_xpath, locatorType="xpath")
         time.sleep(3)
+        actions = ActionChains(driver)
+        actions.move_to_element(descriptionBox)
+        actions.click(descriptionBox)
+        actions.perform()
+
 
     def setupSync2(self):
         self.elementClick(self._enterEmailButton_xpath, locatorType="xpath")

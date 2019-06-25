@@ -88,3 +88,19 @@
 06/20/2019 03:56:15 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
 06/20/2019 03:56:15 PM - LoginPage - INFO: Element Found
 06/20/2019 03:56:15 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 04:48:55 PM - LoginPage - INFO: Element Found
+06/20/2019 04:48:56 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 04:48:56 PM - LoginPage - INFO: Element Found
+06/20/2019 04:48:56 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 04:48:56 PM - LoginPage - INFO: Element Found
+06/20/2019 04:48:56 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 04:51:31 PM - LoginPage - INFO: Element Found
+06/20/2019 04:51:32 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[1] locatorType: xpath
+06/20/2019 04:51:32 PM - LoginPage - INFO: Element Found
+06/20/2019 04:51:32 PM - LoginPage - INFO: Sent data on element with locator: //*[@id='root']/div/input[2] locatorType: xpath
+06/20/2019 04:51:32 PM - LoginPage - INFO: Element Found
+06/20/2019 04:51:32 PM - LoginPage - INFO: Clicked on element with locator: //*[@id='root']/div/div[1] locatorType: xpath
+06/20/2019 04:51:33 PM - syncEmail - INFO: Element Found
+06/20/2019 04:51:33 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/div/div/ul/li[5]/a locatorType: xpath
+06/20/2019 04:51:35 PM - syncEmail - INFO: Element Found
+06/20/2019 04:51:36 PM - syncEmail - INFO: Clicked on element with locator: //*[@id='root']/div/div/main/div/div/button locatorType: xpath

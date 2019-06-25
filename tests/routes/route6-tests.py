@@ -18,11 +18,3 @@ class syncEmailTests(unittest.TestCase):
     @pytest.mark.run(order=1)
     def test_emailSync(self):
         self.se.setupSync()
-
-    @pytest.fixture(autouse=True)
-    def classSetup(self,getSyncEmailInstance):
-
-        @pytest.mark.run(order=2)
-        def test_emailSync(self):
-            self.se.setupSync2()
-
